@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<script src="/static/index/js/pintuer.js"></script>
+</head>
+<body>
+	<h1>用户注册</h1>
+<form method="post" action="" onsubmit="return check()" name="myform" enctype="multipart/form-data">
+        <input type="hidden" name="sid" value="{$sid}" />
+		name:<input type="text" class="input" id="name" name="name" value=""  />
+		phone:<input type="text" class="input" name="phone" id="phone"  value="" />
+		photo:<input type="file" class="input" name="photo" id="photo" value="" />
+		<input type="submit" value="注册"/>
+</form>
+</body>
+</html>
+<script>
+  function getObj(id){
+	var Obj = document.getElementById(id).value;
+	return Obj;
+  } 
+  function check(){
+	if(getObj("name")==""||  getObj("phone")==""){
+	alert("文本框输入为空，不能提交表单！");
+	document.getElementById("name").focus;
+	return false;//false:阻止提交表单
+	}
+  } 
+</script>

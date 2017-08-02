@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="/static/jd/css/pintuer.css">
+<link rel="stylesheet" href="/static/jd/css/admin.css">
+<link href="/static/datepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+<script src="/static/jd/js/jquery.js"></script>
+<script src="/static/jd/js/pintuer.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/utf8-php/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/utf8-php/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/static/utf8-php/lang/zh-cn/zh-cn.js"></script>
+<!--时间插件-->
+<script type="text/javascript" language="javascript" src="/static/datepicker/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/datepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/static/datepicker/datepicker_zh-cn.js"></script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>添加产品</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="" enctype="multipart/form-data">
+	<div class="form-group">
+        <div class="label">
+          <label>活动标题：</label>
+          </div>
+        <div class="field">
+       <input type='text' name='act_name' class='input' value='{$list.act_name}' style="width:200px" data-validate="required:请输入活动名称"/>
+        </div>
+      </div>
+       <div class="form-group">
+          <div class="label">
+            <label>图片一:</label>
+          </div>
+          <div class="label" style="padding-top:8px;"> 
+         <input class="input" id="ishome" name="logo1" value="" type="file" />
+         <img src="{$list.sm_logo1}"  style="width:50px;height:50px" />
+         <div class="tips">尺寸：488*492</div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="label">
+          <label>alt1：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='alt1' class='input' value="{$list.alt1}"/>
+        </div>
+      </div>
+         <div class="form-group">
+        <div class="label">
+          <label>简介：</label>
+          </div>
+        <div class="field">
+       <textarea  name="desc1" class="input" style="height:100px; border:1px solid #ddd;">{$list.desc1}</textarea>
+        </div>
+      </div>
+       <div class="form-group">
+          <div class="label">
+            <label>图片二:</label>
+          </div>
+          <div class="label" style="padding-top:8px;"> 
+         <input class="input" id="ishome" name="logo2" value="" type="file"  />
+         <img src="{$list.sm_logo2}"  style="width:50px;height:50px" />
+         <div class="tips">尺寸：497*220</div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="label">
+          <label>alt2：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='alt2' class='input' value="{$list.alt2}"/>
+        </div>
+      </div>
+         <div class="form-group">
+        <div class="label">
+          <label>简介：</label>
+          </div>
+        <div class="field">
+       <textarea  name="desc2" class="input" style="height:100px; border:1px solid #ddd;">{$list.desc2}</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+          <div class="label">
+            <label>图片三:</label>
+          </div>
+          <div class="label" style="padding-top:8px;"> 
+         <input class="input" id="ishome" name="logo3" value="" type="file"  />
+         <img src="{$list.sm_logo3}"  style="width:50px;height:50px" />
+         <div class="tips">尺寸：241*257</div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="label">
+          <label>alt3：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='alt3' class='input' value="{$list.alt3}"/>
+        </div>
+      </div>
+         <div class="form-group">
+        <div class="label">
+          <label>简介：</label>
+          </div>
+        <div class="field">
+       <textarea  name="desc3" class="input" style="height:100px; border:1px solid #ddd;">{$list.desc3} </textarea>
+        </div>
+      </div>
+      <div class="form-group">
+          <div class="label">
+            <label>图片四:</label>
+          </div>
+          <div class="label" style="padding-top:8px;"> 
+         <input class="input" id="ishome" name="logo4" value="" type="file" />
+         <img src="{$list.logo4}"  style="width:50px;height:50px" />
+         <div class="tips">尺寸：241*257</div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="label">
+          <label>alt4：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='alt4' class='input' value="{$list.alt4}"/>
+        </div>
+      </div>
+       <div class="form-group">
+        <div class="label">
+          <label>简介：</label>
+          </div>
+        <div class="field">
+       <textarea  name="desc4" class="input" style="height:100px; border:1px solid #ddd;">{$list.desc4}</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>所属小区：</label>
+        </div>
+        <div class="field">
+          <!--<input type="text" class="input w50"  name="com_name" value="" data-validate="required:请输入站点名称" />-->
+          <select name="com_id">
+          <option value=''>请选择小区</option>
+            {volist name='com_list' id='vo'}
+           <option value='{$vo.id}' {if condition="$vo.id eq $list.com_id "} selected='selected' {/if}>{$vo.com_name}</option>
+            {/volist}
+          </select>
+          <div class="tips"></div>
+        </div>
+      </div>
+     <div class="form-group">
+        <div class="label">
+          <label>参加户数：</label>
+          </div>
+        <div class="field">
+     <input type='text' name='num' class='input' value="{$list.num}" style="width:200px" data-validate="required:请输入户数"/>
+        </div>
+      </div>
+       <div class="form-group">
+        <div class="label">
+          <label>title：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='title' value="{$list.title}" class='input' style="width:315px;"/>
+        </div>
+      </div> 
+       <div class="form-group">
+        <div class="label">
+          <label>keywords：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='keywords' class='input w50' value="{$list.keywords}" style="margin-right: 10px;"/>
+       <input type='text' name='keywords1' class='input w50' value="{$list.keywords1}" data-validate="required:请输入keywords1" style="margin-right: 10px;"/>
+       <input type='text' name='keywords2' class='input w50' value="{$list.keywords2}" data-validate="required:请输入keywords2" style="margin-right: 10px;"/>
+        </div>
+      </div>
+       <div class="form-group">
+        <div class="label">
+          <label>desc：</label>
+          </div>
+        <div class="field">
+      <input type='text' name='desc' class='input' value="{$list.desc}" style="width:615px;"/>
+        </div>
+      </div>                                                   
+      <div class="form-group">
+        <div class="label">
+          <label>活动内容：</label>
+          </div>
+        <div class="field">
+     <textarea id='goods_desc' name="act_content" class="input" style="height:350px; border:1px solid #ddd;">{$list.act_content}</textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div style="height:80px;">
+        <div class="label">
+          </div>
+        <div class="field">
+        活动时间:<input type="text"  id="st"  name='start_time' value='{$list.start_time|date="Y-m-d",###}' data-validate="required:请输入活动时间">
+          <!--   到:<input type="text"  id="sd"  name='end_time' value='{$list.end_time|date="Y-m-d",###}'> -->
+        </div>
+      </div>  
+      <div class="form-group">                  
+   <input type="hidden" name='id' value="{$list.bb}"/>
+    <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+    </form>
+  </div>
+</div>
+</body>
+<script>
+var ue = UE.getEditor('goods_desc');
+  $('#st').datepicker({ dateFormat: "yy-mm-dd" });
+  // $('#sd').datepicker({ dateFormat: "yy-mm-dd" });
+  </script>
+</html>
